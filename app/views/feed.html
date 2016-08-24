@@ -1,0 +1,10 @@
+<h1>{{ $ctrl.item.url }}</h1>
+
+<div ng-repeat="entry in $ctrl.entries" class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ entry.title }} - {{ entry.publishedDate }}</h3>
+  </div>
+  <div class="panel-body">
+    {{ entry.contentSnippet }}
+  </div>
+</div>
