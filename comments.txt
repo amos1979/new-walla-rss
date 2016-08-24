@@ -1,0 +1,7 @@
+
+
+first we create a service (rssstore) which we build all the vital functions in it - for add url li and for removing it .  the most important thing is to futch the rss which we send the item.url to the json api and get back the rss in our page . 
+second we create a feed controller which use the rssstore in order to get the item and actually load it to our page .
+we also  create a main controller to use it for the left side of our page for add and remove the items . 
+the page divition take place at the main.tpl.html which we use the bootstrap for the form and the page divide. 
+in the right section we use $routeParams to route to the item we get using the rssstore. 
